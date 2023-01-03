@@ -19,7 +19,8 @@ const Register = ({ setAuth }) => {
     try {
       const body = { email, password, name };
       const response = await fetch(
-        "http://localhost:5000/authentication/register",
+        // "http://localhost:5600/authentication/register",
+        "api/authentication/register",
         {
           method: "POST",
           headers: {
