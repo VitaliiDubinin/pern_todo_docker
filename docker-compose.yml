@@ -24,7 +24,7 @@ services:
     environment:
       - PGUSER=postgres
       - PGHOST=postgres
-      - PGDATABASE=postgres
+      - PGDATABASE=authtodolist
       - PGPASSWORD=postgres_password
       - PGPORT=5432
   client:
