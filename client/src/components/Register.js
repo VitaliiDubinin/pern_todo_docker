@@ -22,7 +22,7 @@ const Register = ({ setAuth }) => {
       console.log(JSON.stringify(body));
       const response = await fetch(
         // "http://localhost:5600/authentication/register",
-        "api/authentication/register",
+        "/api/authentication/register",
         {
           method: "POST",
           headers: {
