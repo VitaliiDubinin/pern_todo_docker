@@ -15,6 +15,9 @@ router.post("/register", validInfo, async (req, res) => {
     const user = await pool.query("SELECT * FROM users WHERE user_email = $1", [
       email
     ]);
+    // return res.status(488).json(pool);
+    // return console.log("test");
+   
 
     if (user.rows.length > 0) {
       return res.status(401).json("User already exist!");
