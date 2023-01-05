@@ -4,6 +4,8 @@ services:
     image: "postgres:latest"
     environment:
       - POSTGRES_PASSWORD=postgres_password
+    volumes:
+      - ./database.sql:/docker-entrypoint-initdb.d/database.sql
   nginx:
     depends_on:
       - api

@@ -13,7 +13,7 @@ const InputTodo = ({ setTodosChange }) => {
 
       const body = { description };
       // const response = await fetch("http://localhost:5600/dashboard/todos", {
-      const response = await fetch("api/dashboard/todos", {
+      const response = await fetch("/api/dashboard/todos", {
         method: "POST",
         headers: myHeaders,
         body: JSON.stringify(body)
