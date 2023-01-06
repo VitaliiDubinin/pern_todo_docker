@@ -5,6 +5,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres_password
     volumes:
+      - pgvolumevd:/var/lib/postgresql/data
       - ./server/database.sql:/docker-entrypoint-initdb.d/database.sql
   pgadmin:
     image: "dpage/pgadmin4"
@@ -48,3 +49,6 @@ services:
     volumes:
       - /app/node_modules
       - ./client:/app
+volumes:
+  pgvolumevd:
+
