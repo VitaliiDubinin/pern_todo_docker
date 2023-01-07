@@ -17,6 +17,6 @@ jobs:
           key: ${{secrets.SSH_KEY}}
          # name: Vitalii
           known_hosts: ${{secrets.KNOWN_HOSTS}}
-          if_key_exists: fail      
+          if_key_exists: ignore      
       - name: rsync over ssh
         run: ./deploy_to_aws.sh
