@@ -7,4 +7,4 @@ ssh ubuntu@18.185.241.143 " sudo docker image prune -f
         git reset --hard origin/develop  &&  echo 'You are doing well'
         sudo docker-compose build && sudo docker-compose up -d
         "
-echo 'Deployment completed successfully!'
+echo 'Deployment completed successfully!!'
