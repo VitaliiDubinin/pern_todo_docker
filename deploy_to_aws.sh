@@ -1,6 +1,7 @@
 #!/bin/bash
 echo 'Starting to Deploy...'
-ssh ubuntu@18.185.241.143 " 
+awspath="${1}" 
+ssh awspath " 
         # sudo docker image prune -f
         cd todo/pern_todo_docker 
         sudo docker-compose down
