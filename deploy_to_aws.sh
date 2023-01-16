@@ -1,7 +1,6 @@
 #!/bin/bash
 echo 'Starting to Deploy...'
-awspath="${1}" 
-ssh awspath " 
+ssh ubuntu@18.185.241.143 " 
         # sudo docker image prune -f
         cd todo/pern_todo_docker 
         sudo docker-compose down
@@ -10,4 +9,4 @@ ssh awspath "
         # sudo docker-compose build && sudo docker-compose up -d
         sudo docker-compose up -d
         "
-echo 'Deployment completed successfully!!'
+echo 'Deployment completed successfully!!!'
