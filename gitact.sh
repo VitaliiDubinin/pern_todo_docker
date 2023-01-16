@@ -1,4 +1,3 @@
-#!/bin/bash
 echo 'Starting to Deploy...'
 # sudo docker image prune -f
 #cd UI_RSP
