@@ -7,4 +7,4 @@ cd UI_RSP
 # git reset --hard origin  &&  echo 'You are doing well'
 # sudo docker-compose build && sudo docker-compose up -d
 # sudo docker-compose up -d
-echo 'Deployment completed successfully!!'
+echo 'Deployment completed successfully!!!'
