@@ -20,4 +20,4 @@ jobs:
           if_key_exists: ignore      
       - name: rsync over ssh
 #        run: ./deploy_to_aws.sh
-        run: ssh ${{secrets.AWS_USERNAME}}@${{secrets.AWS_SERVER}} bash/home/${{secrets.AWS_USERNAME}}/gitact.sh
+        run: ssh ${{secrets.AWS_USERNAME}}@${{secrets.AWS_SERVER}} bash/home/${{secrets.AWS_USERNAME}}/todo/pern_todo_docker/gitact.sh
