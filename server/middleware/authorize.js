@@ -8,17 +8,10 @@ module.exports = function(req, res, next) {
   // const token = req.header("jwt_token");
   const token = req.headers["jwt_token"];
   // const token = req.headers["origin"];
-  console.log(req.headers);
+  // console.log(req.headers);
   // console.log(req.headers["origin"]);
-  console.log(req.headers["jwt_token"]);
-  // const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNzQ4ZjUzMGUtZDVkZi00ODY2LTg5OWYtNTNmNDA5ZTQ1ZjZkIn0sImlhdCI6MTY3MjkwMjQ3NCwiZXhwIjoxNjcyOTA2MDc0fQ.aLYBuM_yQBwVlJrIOjPrOR6e2mxbaNPOJRGq_sQ0_o4";
+  // console.log(req.headers["jwt_token"]);
   
-  // if (typeof window !== 'undefined') {
-  //   // Perform localStorage action
-  //    const token = localStorage.getItem('token');
-  
-
-  // const token = localStorage.getItem('token');
 
   // Check if not token
   if (!token) {

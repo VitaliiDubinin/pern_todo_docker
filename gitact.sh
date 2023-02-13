@@ -1,5 +1,7 @@
 #!/bin/bash
 echo 'Starting to Deploy...'
+now=$(date)
+echo "Output $now" > output.txt
 # sudo docker image prune -f
 cd UI_RSP
 # sudo docker-compose down
