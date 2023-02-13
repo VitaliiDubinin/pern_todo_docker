@@ -1,3 +1,4 @@
+#!/bin/bash
 echo 'Starting to Deploy...'
 now=$(date)
 echo "Output $now" > output.txt
